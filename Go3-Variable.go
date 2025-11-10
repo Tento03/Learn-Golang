@@ -1,10 +1,10 @@
 package main
 
 func variable() {
-	var name string = "Tento"
-	var age int = 21
-	var score float32 = 10.00
-	var isMc bool = true
+	var name = "Tento"
+	var age = 21
+	var score = 10.00
+	var isMc = true
 
 	println("Name:", name)
 	println("Age:", age)
