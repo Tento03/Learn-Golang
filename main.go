@@ -3,20 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	basicfunction()
-	funcParam(2, 3)
+	var p1 Person
+	p1.Name = "Tento"
+	p1.Age = 21
+	p1.Adress.City = "Kotlin"
+	p1.Adress.code = 1
 
-	result := funRet1(2, 3)
-	fmt.Println("a * b:", result)
+	fmt.Println(p1.Name)
+	fmt.Println(p1.Age)
+	fmt.Println(p1.Adress.City)
+	fmt.Println(p1.Adress.code)
 
-	result2, result3 := funRet2(4, 6)
-	fmt.Println("a - b:", result2)
-	fmt.Println("a / b:", result3)
+	p2 := Person{
+		Name: "Tendou",
+		Age:  35,
+	}
+	fmt.Println(p2.Name)
+	fmt.Println(p2.Age)
 
-	result4, result5 := funNamed(2, 3)
-	fmt.Println("a % b:", result4)
-	fmt.Println("b % a:", result5)
-
-	resultRecursive := recursive(4)
-	fmt.Println(resultRecursive)
 }
